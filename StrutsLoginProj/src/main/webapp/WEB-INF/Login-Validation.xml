@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE validators PUBLIC   
+        "-//OpenSymphony Group//XWork Validator 1.0.2//EN"   
+        "http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">  
+  
+        <validators>  
+          
+        <!--<field name="data">  
+        <field-validator type="regex">  
+        <param name="expression">[A-Z,a-z,0-9]{5}</param>  
+        <message>data must be alpha numeric of 5 digits</message>  
+        </field-validator>  
+        </field>  
+          
+        -->  
+        <field name="data">  
+        <field-validator type="regex">  
+        <param name="expression">[A,a][A-Z,a-z,0-9]{5}</param>  
+        <message>data must be alpha numeric of 6 digits and starts with a or A</message>  
+        </field-validator>  
+        </field>   
+          
+        </validators>  
